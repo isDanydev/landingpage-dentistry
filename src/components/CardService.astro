@@ -1,0 +1,30 @@
+---
+const { titleCard, description } = Astro.props;
+---
+
+<div
+  class="items-center justify-center w-full rounded bg-[var(--background-main)] p-3 min-h-[200px] gap-3 hover:scale-105 transition-transform duration-300 hover:bg-[#12a8da] cursor-pointer grid grid-cols-[0.1fr_1fr]"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="icon icon-tabler icons-tabler-outline icon-tabler-heartbeat lg:h-[48px] lg:w-[48px] md:h-[32px] md:w-[32px] h-[24px] w-[24px]"
+    ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+      d="M19.5 13.572l-7.5 7.428l-2.896 -2.868m-6.117 -8.104a5 5 0 0 1 9.013 -3.022a5 5 0 1 1 7.5 6.572"
+    ></path><path d="M3 13h2l2 3l2 -6l1 3h3"></path></svg
+  >
+  <div class="">
+    <h3>{titleCard}</h3>
+    <p
+      class="text-sm mt-3 text-ellipsis overflow-hidden"
+      style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;"
+    >
+      {description}
+    </p>
+  </div>
+</div>

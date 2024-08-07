@@ -1,0 +1,40 @@
+---
+import CardDoctor from "./CardDoctor.astro";
+import TitleSection from "./TitleSection.astro";
+---
+
+<section
+  id="doctores"
+  class="bg-[var(--background-main)] w-full md:h-screen grid md:grid-cols-1 gap-3 justify-items-center items-center p-10 h-full"
+>
+  <div
+    class="row-span-1 col-span-2 w-full m-auto flex flex-col justify-center items-center rounded-md gap-10"
+  >
+    <TitleSection titleSection="Doctores" colorFont="text-white" />
+  </div>
+
+  <div
+    class="row-span-2 col-span-2 grid-cols-1 w-full grid md:grid-cols-[0.5fr_0.5fr] gap-3 lg:grid-cols-[0.5fr_0.5fr_0.5fr_0.5fr]"
+  >
+    <CardDoctor
+      doctorImage="assets/img/doctor-1.avif"
+      doctorName="Dr. Alexa"
+      doctorProfession="Odontología"
+    />
+    <CardDoctor
+      doctorImage="assets/img/doctor-2.avif"
+      doctorName="Dr. Guillermo"
+      doctorProfession="Medico general"
+    />
+    <CardDoctor
+      doctorImage="assets/img/doctor-3.avif"
+      doctorName="Dr. Juan"
+      doctorProfession="Odontología"
+    />
+    <CardDoctor
+      doctorImage="assets/img/doctor-4.avif"
+      doctorName="Dr. Jimena"
+      doctorProfession="Anestesiología"
+    />
+  </div>
+</section>

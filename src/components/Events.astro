@@ -1,0 +1,60 @@
+---
+import CardEvent from "./CardEvent.astro";
+import TitleSection from "./TitleSection.astro";
+---
+
+<section
+  id="eventos"
+  class="bg-[var(--background-main)] w-full grid grid-cols-1 justify-items-center items-center px-10 h-full pb-10 md:px-10 grid-rows-1"
+>
+  <div
+    class="md:row-start-1 md:row-end-3 md:col-span-8 col-span-1 w-full m-auto flex flex-col justify-center items-center rounded-md space-y-5 my-10"
+  >
+    <TitleSection titleSection="Servicios" colorFont="text-white" />
+  </div>
+  <div
+    class="flex flex-col p-5 rounded-md bg-[#d1edf6] hover:bg-[#bad6df] hover:scale-105 transition-all duration-300 md:col-start-2 md:col-end-4 md:col-auto col-span-1 h-full"
+  >
+    <img
+      src="/assets/img/evento-1.avif"
+      alt="event-1"
+      class="w-full h-full rounded-md"
+    />
+    <h3 class="text-center">
+      No todos los cepillos son iguales. Descubre cuál es el ideal para ti según
+      tus necesidades y cómo usarlo correctamente para una limpieza eficaz.
+      ¡Dile adiós a la placa y las caries!
+    </h3>
+    <div class="flex items-center justify-around p-3">
+      <img
+        src="/assets/icons/actriz.png"
+        alt=""
+        class="size-12 bg-white rounded-full"
+      />
+      <div class="flex flex-col items-start justify-center">
+        <h4 class="text-center text-sm font-medium">
+          <span class="font-light"> By</span> Marcus Baptista
+          <span class="text-sm italic">25/07/2021</span>
+        </h4>
+      </div>
+    </div>
+    <button
+      class="bg-white py-1 px-5 rounded-md hover:scale-105 transition-all duration-300 w-fit font-medium border-2 border-[#00BFFF] text-[#00BFFF] hover:bg-[#00BFFF] hover:text-white"
+    >
+      Ver Mas
+    </button>
+  </div>
+  <div
+    class="flex flex-col justify-center items-center md:col-span-1 gap-3 p-5 md:p-0 mx-2"
+  >
+    <CardEvent
+      contenido="¿Sabías que algunos alimentos pueden dañar tus dientes y otros protegerlos? Aprende a identificarlos para mantener una sonrisa saludable y radiante. ¡Tu dieta puede ser tu mejor aliada!"
+    />
+    <CardEvent
+      contenido="¿El blanqueamiento daña los dientes? ¿Es seguro hacerlo en casa? Despejamos todas tus dudas sobre este popular tratamiento estético y te contamos cómo conseguir una sonrisa más blanca de forma segura."
+    />
+    <CardEvent
+      contenido="No esperes a tener dolor para acudir al dentista. Descubre la importancia de las revisiones periódicas y cómo pueden ayudarte a prevenir problemas bucales y mantener una sonrisa sana a largo plazo."
+    />
+  </div>
+</section>

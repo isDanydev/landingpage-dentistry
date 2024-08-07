@@ -1,0 +1,10 @@
+---
+const { titleSection, colorFont = "text-black", sybtitle } = Astro.props;
+---
+
+<h2 class={`col-span-2 text-6xl font-bold pt-10 ${colorFont}`}>
+  {titleSection}
+</h2>
+<p class={`col-span-2 text-center md:w-[75%] ${colorFont}`}>
+  {sybtitle}
+</p>

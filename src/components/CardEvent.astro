@@ -1,0 +1,29 @@
+---
+const { contenido } = Astro.props;
+---
+
+<div
+  class="flex flex-col p-2 rounded-md bg-[#d1edf6] hover:bg-[#b1d1dc] hover:scale-105 transition-all duration-300"
+>
+  <h3>
+    {contenido}
+  </h3>
+  <div class="flex items-center justify-around p-3">
+    <img
+      src="/assets/icons/actriz.png"
+      alt=""
+      class="size-12 bg-white rounded-full"
+    />
+    <div class="flex flex-col items-start justify-center">
+      <h4 class="text-center text-sm font-medium">
+        <span class="font-light"> By</span> Marcus Baptista
+        <span class="text-sm italic">25/07/2021</span>
+      </h4>
+    </div>
+  </div>
+  <button
+    class="bg-white py-1 px-5 rounded-md hover:scale-105 transition-all duration-300 w-fit font-medium border-2 border-[#00BFFF] text-[#00BFFF] hover:bg-[#00BFFF] hover:text-white"
+  >
+    Ver Mas
+  </button>
+</div>

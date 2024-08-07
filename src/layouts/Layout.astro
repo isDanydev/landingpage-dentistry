@@ -1,0 +1,65 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>
+<style is:global>
+  :root {
+    --background-main: #00bfff;
+    --background-secondary: #90ee90;
+    --color-gray: #d5e7e7;
+    --gradient-primary: linear-gradient(
+      180deg,
+      rgba(176, 176, 176, 1) 0%,
+      rgba(126, 126, 126, 1) 50%,
+      rgba(65, 65, 65, 1) 100%
+    );
+  }
+  * {
+    font-family: system-ui, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    background-color: #212020;
+    scroll-behavior: smooth;
+  }
+  body {
+    max-width: 1920px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  .gradient-secondary {
+    background: linear-gradient(
+      180deg,
+      rgba(176, 176, 176, 1) 0%,
+      rgba(126, 126, 126, 1) 50%,
+      rgba(65, 65, 65, 1) 100%
+    );
+  }
+</style>

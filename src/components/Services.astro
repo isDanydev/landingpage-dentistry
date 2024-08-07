@@ -1,0 +1,55 @@
+---
+import CardService from "./CardService.astro";
+import TitleSection from "./TitleSection.astro";
+
+//grid-cols-[180px_1fr_180px]
+---
+
+<section
+  id="servicios"
+  class="bg-[#d1edf6] w-full md:h-screen grid md:grid-cols-2 grid-cols-1 justify-items-center items-center p-10 h-full"
+>
+  <div
+    class="row-span-1 col-span-2 w-full m-auto flex flex-col justify-center items-center rounded-md gap-10"
+  >
+    <TitleSection
+      titleSection="Servicios"
+      sybtitle="Descubre nuestros tratamientos dentales diseñados para mejorar tu salud y bienestar."
+    />
+  </div>
+  <div
+    class="col-span-1 md:col-span-2 p-10 md:mt-12 lg:text-2xl md:text-xl text-white gap-3 grid auto-rows-max-[100px] grid-cols-1 md:grid-cols-3 lg:grid-cols-3 rounded"
+  >
+    <CardService
+      titleCard="Limpieza dental"
+      description="Eliminamos la placa bacteriana y el sarro acumulados en tus dientes y encías, previniendo caries, enfermedades de las encías y mal aliento. Incluye pulido para una sonrisa más brillante."
+    />
+    <CardService
+      titleCard="Endodoncia"
+      description="Salvaguardamos tus dientes naturales eliminando la pulpa infectada o dañada. Luego, limpiamos y sellamos los conductos radiculares para evitar futuros problemas y restaurar la funcionalidad del diente."
+    />
+    <CardService
+      titleCard="Blanqueamiento dental"
+      description="Recupera el brillo natural de tus dientes con nuestros tratamientos de blanqueamiento seguros y efectivos. Eliminamos manchas causadas por café, té, vino y otros alimentos, para una sonrisa más radiante."
+    />
+    <CardService
+      titleCard="Ortodoncia "
+      description="Corregimos la posición de tus dientes y la mordida para una sonrisa más estética y funcional. Ofrecemos opciones tradicionales con brackets y modernas con alineadores invisibles, adaptándonos a tus necesidades y estilo de vida."
+    />
+    <CardService
+      titleCard="Implantes dentales"
+      description="Reemplazamos dientes perdidos con implantes de titanio, que se integran al hueso de la mandíbula y funcionan como raíces artificiales. Sobre ellos, colocamos coronas personalizadas que lucen y funcionan como dientes naturales."
+    />
+    <CardService
+      titleCard="Odontología estética"
+      description="Mejoramos la apariencia de tu sonrisa con tratamientos estéticos personalizados. Las carillas corrigen imperfecciones menores, las coronas protegen dientes debilitados y los puentes reemplazan uno o más dientes ausentes."
+    />
+  </div>
+</section>
+
+<style>
+  .services {
+    scroll-behavior: smooth;
+    transition: transform 3s ease-in-out;
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import CardsTestimonial from "./CardsTestimonial.astro";
+import Data from "./Data.astro";
+import TitleSection from "./TitleSection.astro";
+---
+
+<section
+  id="testimoniales"
+  class="bg-[#d1edf6] w-full md:h-screen grid md:grid-cols-2 grid-cols-1 gap-3 justify-items-center items-center p-10 h-full grid-rows-3"
+>
+  <div
+    class="row-span-1 md:col-span-2 w-full m-auto flex flex-col justify-center items-center rounded-md gap-10 col-span-1"
+  >
+    <TitleSection titleSection="Testimonios" />
+  </div>
+  <div
+    class="row-span-2 md:row-span-1 md:col-span-2 col-span-1 grid grid-rows-1 md:grid-cols-3 grid-cols-1 gap-3 p-2 text-white"
+  >
+    <CardsTestimonial
+      nombre="Roxana"
+      descripcion="Tuve una emergencia dental un fin de semana y el Dr. Alexa me atendió de inmediato. Fue muy amable y profesional, me explicó todo con detalle y me solucionó el problema rápidamente."
+      paciente="Paciente"
+    />
+    <CardsTestimonial
+      nombre="Efrain"
+      descripcion="Perdí un diente en un accidente y pensé que nunca volvería a sonreír con confianza. Pero gracias a los implantes dentales, recuperé mi sonrisa y mi autoestima."
+      paciente="Paciente"
+    />
+    <CardsTestimonial
+      nombre="Daniel"
+      descripcion="Llegué a la clínica con una sonrisa que me acomplejaba y gracias al Dr. [Nombre del odontólogo] y su equipo, hoy tengo la confianza que siempre deseé. "
+      paciente="Paciente"
+    />
+  </div>
+  <Data />
+</section>
